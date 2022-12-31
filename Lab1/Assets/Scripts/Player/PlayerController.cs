@@ -17,8 +17,7 @@ public class PlayerController : MonoBehaviour
     public GroundCheck groundCheck = null;
     [Tooltip("The sprite renderer that represents the player.")]
     public SpriteRenderer spriteRenderer = null;
-    [Tooltip("The health component attached to the player.")]
-    public Health playerHealth;
+   
 
     // The rigidbody used to move the player (necessary for this component, so not made public)
     private Rigidbody2D playerRigidbody = null;
@@ -386,11 +385,8 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     private void DetermineState()
     {
-        if (playerHealth.currentHealth <= 0)
-        {
-            SetState(PlayerState.Dead);
-        }
-        else if (grounded)
+       
+        if (grounded)
         {
             if (playerRigidbody.velocity.magnitude > 0)
             {

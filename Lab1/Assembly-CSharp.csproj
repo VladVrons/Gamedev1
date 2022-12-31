@@ -53,50 +53,10 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Pickups\GoalPickup.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\UI\UIPage.cs" />
-    <Compile Include="Assets\Scripts\Utility\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAnimator.cs" />
-    <Compile Include="Assets\Scripts\Checkpoint\CheckpointTracker.cs" />
-    <Compile Include="Assets\Scripts\_Dummy\Dummy.cs" />
-    <Compile Include="Assets\Scripts\Utility\ScreenshotUtility.cs" />
-    <Compile Include="Assets\Scripts\Environment\PlayerChilder.cs" />
-    <Compile Include="Assets\Scripts\Enemy\FlyingEnemy.cs" />
-    <Compile Include="Assets\Scripts\Health&amp;Damage\Damage.cs" />
-    <Compile Include="Assets\Scripts\UI\LevelLoadButton.cs" />
-    <Compile Include="Assets\Scripts\Pickups\ScorePickup.cs" />
-    <Compile Include="Assets\Scripts\Utility\LevelSwitcher.cs" />
-    <Compile Include="Assets\Scripts\Pickups\ExtraLifePickup.cs" />
-    <Compile Include="Assets\Scripts\UI\UIelement\HealthDisplay.cs" />
-    <Compile Include="Assets\Scripts\Pickups\HealthPickup.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyBase.cs" />
-    <Compile Include="Assets\Scripts\Health&amp;Damage\Head.cs" />
-    <Compile Include="Assets\Scripts\Keys&amp;Doors\KeyRing.cs" />
-    <Compile Include="Assets\Scripts\Utility\TimedObjectDestroyer.cs" />
-    <Compile Include="Assets\Scripts\Environment\PlatformAnimator.cs" />
-    <Compile Include="Assets\Scripts\UI\UIelement\UIelement.cs" />
-    <Compile Include="Assets\Scripts\Pickups\Pickup.cs" />
-    <Compile Include="Assets\Scripts\Utility\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Health&amp;Damage\Health.cs" />
-    <Compile Include="Assets\Scripts\UI\UIelement\ScoreDisplay.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyAnimator.cs" />
-    <Compile Include="Assets\Scripts\UI\QuitGameButton.cs" />
-    <Compile Include="Assets\Scripts\Environment\WaypointMover.cs" />
-    <Compile Include="Assets\Scripts\UI\UIelement\HighScoreDisplay.cs" />
-    <Compile Include="Assets\Scripts\Health&amp;Damage\DeathEffectAnimationHandler.cs" />
-    <Compile Include="Assets\Scripts\UI\HighlightFix.cs" />
-    <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
-    <Compile Include="Assets\Scripts\Checkpoint\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\Player\GroundCheck.cs" />
-    <Compile Include="Assets\Scripts\Pickups\KeyPickup.cs" />
-    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
-    <Compile Include="Assets\Scripts\UI\CursorChanger.cs" />
-    <Compile Include="Assets\Scripts\Keys&amp;Doors\Door.cs" />
-    <Compile Include="Assets\Scripts\Utility\PlayerPrefsResetter.cs" />
-    <Compile Include="Assets\Scripts\Enemy\WalkingEnemy.cs" />
-    <Compile Include="Assets\Scripts\UI\UIelement\LivesDisplay.cs" />
     <Compile Include="Assets\Scripts\Player\InputManager.cs" />
+    <Compile Include="Assets\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -716,9 +676,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem">
-      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
